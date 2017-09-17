@@ -37,10 +37,10 @@
 						<p>Верстка на HTML и CSS <br>Разработка сайтов под ключ</p>
 					</div>
 				</div>
-				<a class="main-down" href="#"><i class="icon-down"></i></a>
+				<a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
 			</div> 
 
-			<div class="portfolio">
+			<div class="portfolio" id="portfolio">
 				<div class="container">
 					<h2 class="section-header">Портфолио</h2>
 					<div class="row">
@@ -160,6 +160,17 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    $('.slowly').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 800); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+    });
+});
+    </script>
    
   </body>
 </html>
