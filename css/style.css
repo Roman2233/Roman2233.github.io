@@ -1,13 +1,21 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
 }
-html {
-	font-size: 10px;
-}
+
 a:active, a:visited, a:focus {
 	text-decoration: none;
-	outline: none;
+	
 }
+/* MAIN */
+
 .wrapper {
 	display:table-cell;
 	vertical-align:middle;
@@ -19,7 +27,7 @@ a:active, a:visited, a:focus {
 	text-align: center;
 	color: #fff;
 	height: 100vh;
-	background: #000 url(../img/main-bg.jpg) center center no-repeat;
+	background: #000 url(../img/slider.jpg) center center no-repeat;
 }
 .main-overlay {
 	position: absolute;
@@ -32,165 +40,359 @@ a:active, a:visited, a:focus {
 	margin-bottom: 1.4rem;
 	font-weight: 300;
 	text-transform: uppercase;
-	font-size: 4.8rem;
+	font-size: 4rem;
 }
 .main p {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 300;
 }
 .main-header {
 	position: relative;
 	z-index: 2;
+	display: inline-block;
 }
 .main-line {
-	width: 200px;
+	width: 300px;
 	height: 1px;
 	background-color: #fff;
 	margin: 0 auto;
 }
-.main-down {
-	position: absolute;
+.butn {
+	
 	color: #fff;
 	z-index: 4;
-	bottom: 2rem;
-	display: inline-block;
-	font-size: 2rem;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	border: 1px solid transparent;
-	line-height: 50px;
-	left: 50%;
-	margin-left: -25px;
-	transition: 0.2s;
-}
-.main-down:hover {
-	color: #fff;
-	border-color: #fff;
-}
-/*Секция с портфолио*/
-.portfolio {
-	padding: 10rem 0px;
-	text-align: center;
-}
-.section-header {
-	text-transform: uppercase;
-	font-weight: 800;
-	font-size: 3.6rem;
-	margin-bottom: 5rem;
-}
-.portfolio img {
-	width: 100%;
-	max-width: 360px;
-	box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54);
-}
-.portfolio a {
-	display: block;
-	margin: 2rem auto 6rem;
-	color: #333;
-	width: 17rem;
-	border-bottom: 1px solid transparent;
-}
-.portfolio a:hover {
-	text-decoration: none;
-	border-bottom: 1px dotted #333;
-}
-/*Секция - подвал*/
-.footer {
-	background-color: #646464;
-	color: #fff;
-	text-align: center;
-	padding: 3rem 0;
-}
-.footer strong {
-	font-weight: 300;
-	font-size: 2.4rem;
-}
-.social-links {
-	margin-top: 1rem;
-}
-.social-links a {
-	width: 5rem;
-	height: 5rem;
-	line-height: 5rem;
-	display: inline-block;
-	color: #fff;
-	border: solid 1px #fff;
-	border-radius: 50%;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	font-size: 2rem;
-	transition: 0.2s;
-}
-.social-links a:hover {
-	background-color: #fff;
-	color: #646464;
-}
-.offer-btn {
-	display: block;
-	width: 80%;
-	max-width: 200px;
-	margin: 1rem auto;
-	border: 1px solid #fff;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	color: #fff;
-	border-radius: 100px;
-	transition: 0.2s;
-}
-.offer-btn:hover {
-	text-decoration: none;
-	background-color: #fff;
-	color: #646464;
-}
-.modal img {
-	width: 100%;
-}
-.modal-title {
-	font-weight: 800;
-	font-size: 2rem;
-}
-.close {
-	background-color: transparent;
-	border: none;
-	font-size: 2.5rem;
 	position: absolute;
-	right: 2rem;
-	top: 1rem;
-}
-.modal-btn {
+	right:  43%;
+	border: 1px solid #fff;
+	border-radius: 100px;
 	display: inline-block;
-	color: #333;
-	border: 1px solid #333;
-	padding: 10px 20px;
-	border-radius: 5px;
+	font-size: 1rem;
+	padding: 1rem;
+	bottom:2rem;
 }
-.modal-btn:hover {
-	background-color: #333;
-	color: #fff;
+
+
+
+.butn:hover {
+	transition: 0.2s;
 	text-decoration: none;
-}
-@media (min-width: 0px) and (max-width: 767px) {
-	html {
-		font-size: 7px;
-	}
-	.footer strong {
-		margin: 3rem 0 2rem;
-		display: inline-block;
-	}
-	.social-links a {
-		font-size: 1.5rem;
-	}
+	text-decoration: none;
+    background-color: #fff;
+    color: #3BA5CA;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-	.footer strong {
-		margin: 3rem 0 2rem;
-		display: inline-block;
-	}
+/* Action */
+
+.prline {
+	width: 200px;
+	height: 1px;
+	background-color: #3BA5CA;
+	margin: 0 auto;
+}
+
+.ic {
+	font-size: 80px;
+	text-align: center;
+	color: #3BA5CA;
+}
+
+.ass {
+	text-align: center;
+}
+
+.mp1 {
+	background: url(../img/map/map1.jpg) no-repeat;
+	height:  300px;
+
+}
+.mp {
+	text-align: center;
+	border: 1px solid #fff;
+	bottom-border-radius: 5%;
+	height:  300px;
+	font-size: 22px;
+}
+
+.mp2 {
+	background: url(../img/map/map2.jpg) no-repeat;
+	height:  350px;
+	
+
+}
+
+.butn1 {
+	
+	padding: 1rem;
+	border: 2px solid #EF5B3E;
+	border-radius: 100px;
+	margin-top: 2rem;
+}
+
+.butn1:hover {
+	color:white ;
+	text-decoration: none;
+	background: #EF5B3E;
+	transition: 0.2s;
+}
+
+.mp3 {
+	background: url(../img/map/map2.jpg) no-repeat;
+	height:  300px;
+	
+}
+
+.mpa {
+	text-align: center;
+	border: 1px solid #fff;
+	bottom-border-radius: 5%;
+	height:  300px;
+	font-size: 20px;
+}
+
+.row>h1 , .row>h2 {
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+.mp4 {
+	background: url(../img/map/map4.jpg) no-repeat;
+	height:  300px;
+	 
+}
+
+
+/* 
+Первичные стили:
+С ними работает слайд шоу
+*/
+
+#slides {
+ position: relative;
+ height: 300px;
+ padding: 0px;
+ margin: 0px;
+ list-style-type: none;
+}
+
+.slide {
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ z-index: 1;
+
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+
+.showing {
+ opacity: 1;
+ z-index: 2;
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+
+.slide {
+ font-size: 40px;
+ padding: 40px;
+ background: #3BA5CA;
+ box-sizing: border-box;
+
+ color: #fff;
+ text-align: center;
+}
+
+.slide>p {
+	font-size: 25px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.headp {
+	background: #3BA5CA;
+	text-align: center;
+	margin-top: 20px;
+	height: 130px;
+	color: white;
+}
+
+.bodyp {
+	background: #F1F1F1;
+	height: 230px;
+	text-align: center;
+
+}
+
+.headp>h1, .headp>h2 {
+	padding-top: 10px;
+}
+
+.bodyp>a  {
+	color: white;
+	background: #3ba5ca;
+	padding: 1rem;
+	border: 2px solid #3BA5CA;
+	border-radius: 100px;
+	text-decoration: none;
+
 }
 
 
 
+.bodyp>p {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	
+}
 
+.fqa  {
+	color: #3ba5ca;
+	padding: 1rem;
+	border: 2px solid #3BA5CA;
+	border-radius: 100px;
+	
+	margin-top: 20px;
+ }
 
+ .t1 {
+ 	display: none;
+ 	text-align: center;
+ 	padding: 1rem;
+	border: 2px solid #E74C3C;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+.t2
+{
+ 	display: none;
+ 	text-align: center;
+ 	padding: 1rem;
+	border: 2px solid #E74C3C;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+.t3
+{
+ 	display: none;
+ 	text-align: center;
+ 	padding: 1rem;
+	border: 2px solid #E74C3C;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+.t4
+{
+ 	display: none;
+ 	text-align: center;
+ 	padding: 1rem;
+	border: 2px solid #E74C3C;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+.t5
+{
+ 	display: none;
+ 	text-align: center;
+ 	padding: 1rem;
+	border: 2px solid #E74C3C;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+.ww {
+	font-size: 25px;
+}
+
+.sert {
+	background: #3BA5CA;
+	height: 300px;
+	text-align: center;
+}
+
+.sert>h1 , .sert>p {
+	color: white;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.sert>p {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.bbtt {
+	color: white;
+	padding: 1rem;
+	border: 2px solid white;
+	border-radius: 100px;
+
+}
+
+.bbtt:hover {
+	color: #3BA5CA;
+	background-color: #fff;
+	text-decoration: none;
+	transition: 0.2s;
+
+}
+
+.footer {
+	background: #2C3E50;
+	height:  500px;
+}
+
+#slides>h1 {
+	color: white;
+}
+
+.marp {
+	text-align: center;
+	color: #2C3E50;
+	border: 2px solid #3498DB;
+	border-radius: 1%;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.ffm {
+	position: absolute;
+	right: 30px;
+	margin-top: 20px;
+}
+
+.action {
+	background-color: #3BA5CA;
+	height: 300px;
+}
+
+.action>p {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.action>h1 {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.pas {
+	margin-bottom: 40px;
+}
