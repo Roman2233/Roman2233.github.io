@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Урок 6. Пример объектно-ориентированного подхода.</title>
+	<meta charset="utf-8">
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#sl1 {
+	background: #000 url(../img/slider2.jpg) center center no-repeat;
+	
+}
+
+#sl2 {
+	background: #000 url(../img/images1.jpg) center center no-repeat;
+	
+}
+
+
+
+#sl4 {
+	background: #000 url(../img/slider4.jpg) center center no-repeat;
+	
+}
+
+#slidess {
+ position: relative;
+ height: 100vh;
+ padding: 0px;
+ margin: 0px;
+ list-style-type: none;
+ text-align: center;
+display:table-cell;
+	vertical-align:middle;
+}
+
+p {
+	font-size: 1.7rem;
+	
+}
+
+.slide {
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ z-index: 1;
+
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+
+.showing {
+ opacity: 1;
+ z-index: 2;
+}
+
+h1, p , .main-line {
+	z-index: 3;
+	position:relative;
+	color: white;
+	
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+
+.slide {
+ font-size: 40px;
+ padding: 40px;
+ 
+ box-sizing: border-box;
+
+ color: #fff;
+ text-align: center;
+}
+
+.slide>p {
+	font-size: 25px;
+}
+</style>
+
+<body>
+
+<ul id="slidess">
+	<h1>Полеты над Казанью </h1>
+						<div class="main-line"></div>
+						<p>Дорогие друзья! Приглашаем Вас и Ваших друзей испытать незабываемые ощущения <br> от полета на четырехместном американском самолете Cessna-172! 
+Летаем над потрясающими своей красотой <br> просторами Марий Эл, Чувашии и Татарстана. 
+Лучшие виды с высоты птичьего полета. 
+Дарите правильные подарки. <br> Вы можете почувствовать себя настоящим пилотом, взяв управление в свои руки под чутким присмотром нашего пилота-инструктора. <br> А любители экстрима узнают, что такое настоящие «Русские горки». 
+Лучшим сюрпризом для любимых будет незабываемый полет. </p>
+   
+ <li id="sl1" class="slide showing "> 
+
+  
+ <li id="sl2" class="slide ">
+
+  
+ 
+ <li id="sl4" class="slide ">
+
+ 
+ 
+</ul>
+
+<script>
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function nextSlide() {
+ goToSlide(currentSlide+1);
+}
+
+function previousSlide() {
+ goToSlide(currentSlide-1);
+}
+function goToSlide(n) {
+ slides[currentSlide].className = 'slide';
+ currentSlide = (n+slides.length)%slides.length;
+ slides[currentSlide].className = 'slide showing sl(n)';
+}
+
+var next = document.getElementById('next');
+var previous = document.getElementById('previous');
+
+next.onclick = function() {
+ 
+ nextSlide();
+};
+previous.onclick = function() {
+ 
+ previousSlide();
+};
+</script>
+		
+</body>
+</html>
