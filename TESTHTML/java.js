@@ -3,11 +3,8 @@ window.addEventListener("DOMContentLoaded", function() {
     txt = document.querySelector("#en"),
     ru = document.querySelector("#ru") ;
     btn.addEventListener("click", function() {
-
 var select = document.getElementById("sele");
 var val = select.value;
-
-
 var request = new XMLHttpRequest();
 var text = encodeURIComponent(txt.value);
 var key = "trnsl.1.1.20190204T134244Z.cbb90abf77f9ffce.4745335122996d2851888242018bbf3227717c77";
