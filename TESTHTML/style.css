@@ -24,6 +24,8 @@ textarea {
 
 * {
 	background:rgb(221, 221, 221);
+	margin:0;
+	padding:0;
 }
 
 select {
