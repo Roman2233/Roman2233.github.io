@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin:0;
+}
+
+.head {
+	widht:100%;
+	height:100vh;
+	background-image: url(../img/headb.png) ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.logo{
+	color:#0d1211;
+	font-size: 40px;
+}
+
+.logo:hover{
+	text-decoration: none;
+	color:#0d1211;
+}
+
+.nav-link{
+	color:#0d1211;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.nav-link:hover{
+	color:#0d1211;
+}
+
+.headt: {
+	font-family: Montserrat;
+}
+
+.headt{
+	margin-top: 10%;
+}
+
+.buttona {
+	color: #ffffff;
+	background: #000;
+	text-transform: uppercase;
+	padding: 10px 15px;
+}
+
+.buttona:hover {
+	text-decoration: none;
+	color:#fff;
+}
+
