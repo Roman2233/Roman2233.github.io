@@ -47,10 +47,10 @@ input {
 }
 
 @media screen and (max-device-width: 765px) {
-    .textarea{display: block;margin-top: 50px;}
+    .textarea{display: block;margin-top: 50px;height:7em;}
     textarea{width: 100%;}
     input{width: 140px;}
-
+	
 }
 
 
